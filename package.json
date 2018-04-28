@@ -1,0 +1,22 @@
+{
+  "name": "mocha_practice",
+  "version": "1.0.0",
+  "description": "Some simple projects with some automation tests for practicing using Mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rb19/mocha_practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rb19/mocha_practice/issues"
+  },
+  "homepage": "https://github.com/rb19/mocha_practice#readme",
+  "dependencies": {
+    "moment": "^2.22.1"
+  }
+}
