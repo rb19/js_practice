@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/rb19/mocha_practice#readme",
   "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1",
     "moment": "^2.22.1"
   }
 }
