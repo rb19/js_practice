@@ -32,10 +32,9 @@ function coinFlip() {
 }
 
 coinFlip()
-//For testing/debugging, print results and count.
+//TEST ONLY: Print results and count.
 //console.log(results);
-//console.log('Number of heads:', heads + '\n' + 
-// 			'Number of tails:', tails);
+//console.log('Number of heads:', heads + '\n' + 'Number of tails:', tails);
 
 //Export for Mocha use.
 module.exports = { 

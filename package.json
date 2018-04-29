@@ -4,7 +4,7 @@
   "description": "Some simple projects with some automation tests for practicing using Mocha",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/.bin/mocha ./coinflip/specs/*.js ./hangman/specs/*.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "dependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.1.1",
-    "moment": "^2.22.1"
+    "moment": "^2.22.1",
+    "prompt": "^1.0.0"
   }
 }
