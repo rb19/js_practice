@@ -9,7 +9,7 @@ npm install mocha
 npm install chai
 ```
 
-##Table of contents:
+## Table of contents:
 
 ### Coinflip
 A simple coin flip simulation. Flip a coin 10 times and get the results.
