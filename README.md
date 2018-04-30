@@ -23,6 +23,6 @@ A game of hangman. 7 tries to guess the word! Can you guess the word?
 A list of math functions for practicing writing simple Mocha tests.
 
 **Tests written**
--Arithmetic operators
--Pi operator
--Assignment operators
+- Arithmetic operators
+- Pi operator
+- Assignment operators
