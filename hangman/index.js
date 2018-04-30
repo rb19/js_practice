@@ -2,25 +2,27 @@
 var prompt = require('prompt');
 const readline = require('readline');
 
-var words = new Array('January', 'February', 'March', 'April', 'May', 'June', 
-	'July', 'August', 'September','October', 'November', 'December');
-var rand_words = words[Math.floor(Math.random() * words.length)].toLowerCase();
-var wordArray = rand_words.split('');
-var attempts = 7;
-console.log(rand_words);
-console.log(wordArray);
+function words(){
+	var words = new Array('January', 'February', 'March', 'April', 'May', 'June', 
+		'July', 'August', 'September','October', 'November', 'December');
+	var rand_words = words[Math.floor(Math.random() * words.length)].toLowerCase();
+	var wordArray = rand_words.split('');
+	var attempts = 7;
+	//TEST ONLY: Display answer
+	//console.log(rand_words);
+	//console.log(wordArray);
 
-var answerArray = [];
-for (var i = 0; i < rand_words.length; i++){
-	answerArray[i] = "_";
+	var answerArray = [];
+	for (var i = 0; i < rand_words.length; i++){
+		answerArray[i] = "_";
+	}
+	console.log(answerArray);
+	var remainingLetters = rand_words.length;
+	console.log('You have ' + remainingLetters + ' letters remaining!');
+	guess(wordArray, attempts, answerArray, remainingLetters);
 }
 
-//TEST ONLY: Display answer
-//console.log(answerArray);
-var remainingLetters = rand_words.length;
-console.log('You have ' + remainingLetters + ' letters remaining!');
-
-function guess(){
+function guess(wordArray, attempts, answerArray, remainingLetters){
 	const rl = readline.createInterface({
 		input: process.stdin,
 		output: process.stdout
@@ -33,7 +35,7 @@ function guess(){
 		}
 		else if (userInput.length !== 1){
 			console.log('Please enter a single letter');
-			guess();
+			guess(wordArray, attempts, answerArray, remainingLetters);
 		}
 		else{
 			if (wordArray.includes(userInput) == true){
@@ -52,7 +54,7 @@ function guess(){
 				remainingLetters = remainingLetters - count[userInput];
 				console.log('You have ' + remainingLetters + ' letters remaining!');
 				if (remainingLetters > 0){
-					guess();
+					guess(wordArray, attempts, answerArray, remainingLetters);
 				}
 				else{
 					console.log('Congratulations! You won!');
@@ -64,7 +66,7 @@ function guess(){
 				if (attempts > 0){
 					attempts--;
 					console.log('Wrong, try again! You have ' + attempts + ' attempts left!');
-					guess();
+					guess(wordArray, attempts, answerArray, remainingLetters);
 				}
 				else{
 					console.log('HANGMAN! Game over!');
@@ -79,7 +81,7 @@ function guess(){
 	});
 }
 
-guess();
+words();
 
 module.exports = {
 	guess: guess

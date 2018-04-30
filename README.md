@@ -17,4 +17,12 @@ A simple coin flip simulation. Flip a coin 10 times and get the results.
 A game of hangman. 7 tries to guess the word! Can you guess the word?
 
 **Tests written**
-- 
+- None yet. To do!
+
+##### Math
+A list of math functions for practicing writing simple Mocha tests.
+
+**Tests written**
+-Arithmetic operators
+-Pi operator
+-Assignment operators

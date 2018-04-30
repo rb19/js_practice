@@ -4,7 +4,7 @@
   "description": "Some simple projects with some automation tests for practicing using Mocha",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha ./coinflip/specs/*.js ./hangman/specs/*.js"
+    "test": "./node_modules/.bin/mocha ./coinflip/specs/*.js ./math/specs/*.js"
   },
   "repository": {
     "type": "git",
