@@ -1,7 +1,7 @@
 'use strict';
 
 function add(i, j){
-	return i + j;
+	return +i + +j;
 }
 
 function sub(i,j){
