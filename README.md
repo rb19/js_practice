@@ -9,9 +9,9 @@ npm install mocha
 npm install chai
 ```
 
-*Table of contents:*
+##Table of contents:
 
-##### Coinflip
+### Coinflip
 A simple coin flip simulation. Flip a coin 10 times and get the results.
 
 **Tests written:**
@@ -20,13 +20,13 @@ A simple coin flip simulation. Flip a coin 10 times and get the results.
 - Result array includes heads and tails.
 - Result array is expected length.
 
-##### Hangman
+### Hangman
 A game of hangman. 7 tries to guess the word! Can you guess the word?
 
 **Tests written**
 - None yet. To do!
 
-##### Math
+### Math
 A list of math functions for practicing writing simple Mocha tests.
 
 **Tests written**
