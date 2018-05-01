@@ -48,7 +48,7 @@ function computeSub(){
 	});
 	rl.question('Give me a number! ', (sub1) => {
 		rl.question('Give me another number! ', (sub2) => {
-			var Answer = math.add(sub1, sub2);
+			var Answer = math.sub(sub1, sub2);
 			console.log(Answer);
 			rl.close();
 		});
@@ -63,7 +63,7 @@ function computeMul(){
 	});
 	rl.question('Give me a number! ', (mul1) => {
 		rl.question('Give me another number! ', (mul2) => {
-			var Answer = math.add(mul1, mul2);
+			var Answer = math.mul(mul1, mul2);
 			console.log(Answer);
 			rl.close();
 		});
@@ -78,7 +78,7 @@ function computeDiv(){
 	});
 	rl.question('Give me a number! ', (div1) => {
 		rl.question('Give me another number! ', (div2) => {
-			var Answer = math.add(div1, div2);
+			var Answer = math.div(div1, div2);
 			console.log(Answer);
 			rl.close();
 		});
