@@ -40,6 +40,20 @@ function divAssign(i,j){
 	return i /= i + j;
 }
 
+function inc(i){
+	//return +i++;
+	return i = +i + +1;
+}
+
+function dec(i){
+	//return i--;
+	return i = i - 1;
+}
+
+function exp(i){
+	return i**i;
+}
+
 module.exports = {
 	add: add,
 	sub: sub,
@@ -50,5 +64,8 @@ module.exports = {
 	addAssign: addAssign,
 	subAssign: subAssign,
 	multAssign: multAssign,
-	divAssign: divAssign
+	divAssign: divAssign,
+	inc: inc,
+	dec: dec,
+	exp: exp
 }
