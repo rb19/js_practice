@@ -64,4 +64,46 @@ describe('Math Objects', function(){
 		assert.equal(math.pi(), Math.PI);
 		done();
 	});
+	it('should return 4', function(done) {
+		assert.equal(math.round(4.4), 4);
+		done();
+	});
+	it('should return 5', function(done) {
+		assert.equal(math.round(4.7), 5);
+		done();
+	});
+	it('should return 144', function(done) {
+		assert.equal(math.power(12, 2), 144);
+		done();
+	});
+	it('should return 13', function(done) {
+		assert.equal(math.sqrt(169), 13);
+		done();
+	});
+	it('should return 10', function(done) {
+		assert.equal(math.abs(-10), 10);
+		done();
+	});
+	it('should return 4', function(done) {
+		assert.equal(math.ceil(Math.PI), 4);
+		done();
+	});
+	it('should return 3', function(done) {
+		assert.equal(math.floor(Math.PI), 3);
+		done();
+	});
+	it('should return 1', function(done) {
+		assert.equal(math.sin(90), 1);
+		done();
+	});
+	it('should return 1', function(done) {
+		assert.equal(math.cos(0), 1);
+		done();
+	});
+	it('should return a random number', function(done) {
+		var Rand1 = math.random();
+		var Rand2 = math.random();
+		assert.notEqual(Rand1, Rand2);
+		done();
+	});
 });
