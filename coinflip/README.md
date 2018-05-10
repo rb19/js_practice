@@ -1,8 +1,9 @@
 # Coinflip
-A simple coin flip simulation. Flip a coin 10 times and get the results.
+A simple coin flip simulation.
 
-### Tests written:
+### Functionality:
+- User enters how many times coin is flipped.
+- Returns results for each flip, number of heads/tails, and percentage of heads/tails.
+
+### Test(s) written:
 - Coin flip returns either heads or tails.
-- Result is always an array.
-- Result array includes heads and tails.
-- Result array is expected length.
